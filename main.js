@@ -17,7 +17,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('gui/index.html')
+  mainWindow.loadFile('gui/curriculum.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
