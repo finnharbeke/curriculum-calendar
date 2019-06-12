@@ -1,0 +1,47 @@
+<h1>Curriculum</h1>
+<p class="lead info">
+    Edit the curriculum!
+</p>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Hours</th>
+            <th scope="col">Title</th>
+            <th scope="col">Content</th>
+            <th scope="col" class="fit-col"></th>
+            <th scope="col" class="fit-col"></th>
+            <th scope="col" class="fit-col"></th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+<h2>Add new course</h2>
+<form>
+    <div class="form-row">
+        <div class="col-2 form-group">
+            <label for="hours-input">Hours</label>
+            <input type="number" class="form-control" id="hours-input" aria-describedby="hours-warning" placeholder="0">
+            <small id="hours-warning" class="form-text text-danger"></small>
+        </div>
+        <div class="col form-group">
+            <label for="title-input">Title</label>
+            <input type="text" class="form-control" id="title-input" aria-describedby="title-warning" placeholder="Enter name">
+            <small id="title-warning" class="form-text text-danger"></small>
+        </div>
+        <div class="col-4 form-group">
+            <label for="content-input">Content</label>
+            <input type="text" class="form-control" id="content-input" aria-describedby="content-warning" placeholder="Enter content category">
+            <small id="content-warning" class="form-text text-danger"></small>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col form-group">
+            <label for="link-input">Link (Optional)</label>
+            <input type="link" class="form-control" id="link-input" aria-describedby="link-warning" placeholder="www.example.com">
+        </div>
+    </div>
+</form>
+<button class="btn btn-primary" onclick="add_course()">Add Course</button>

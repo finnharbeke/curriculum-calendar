@@ -1,0 +1,386 @@
+:root {
+    --bg: #292c33;
+    --nav-bg: #22252b;
+    --dark-grey: #30383c;
+    --light-grey: #b9b9b9;
+    --col-1: #F02092;
+    --col-2: rgb(0, 189, 164);
+    --col-3: #FF665B;
+    --col-4: #366CEB;
+    --col-5: #F9F871;
+    --col-6: #9AEC85;
+    --col-7: #009FCD;
+    --col-8: #FF9700;
+    --col-9: #B64CCC;
+    --col-10: #00BEC3;
+    --col-11: rgb(245, 71, 144);
+    --col-12: #007EBD;
+}
+
+.container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--light-grey);
+}
+
+.nav {
+    background-color: var(--nav-bg);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dropdown-menu {
+    background-color: var(--nav-bg);
+    border: 1px solid var(--primary);
+}
+
+.dropdown-item {
+    color: var(--light-grey);
+}
+
+.dropdown-divider {
+    border-top-color: var(--primary);
+}
+
+/* home */
+
+hr {
+    border-top: 1px solid var(--light-grey);
+}
+
+/* table {
+    border-collapse: separate;
+    border-spacing: 5px 0;
+} */
+
+.events__item td {
+    padding-right: 10px;
+}
+
+.events-container {
+    overflow-y: auto;
+}
+
+.events__tag {
+    border: 2px solid var(--light-grey);
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    width: 60px;
+    margin-left: 16px;
+    padding: 5px 2px;
+    text-align: center;
+    color: #ccc;
+}
+
+.events__item {
+    border: 1px solid var(--light-grey);
+    border-left: 8px solid var(--primary);
+    border-radius: 2px;
+    padding: 15px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    background-color: var(--dark-grey);
+}
+
+.events__item--left {
+    width: calc(100% - 76px);
+}
+
+.events__name {
+    /* font-size: 12px; */
+    font-weight: 700;
+    color: var(--light-grey);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.events__hours {
+    font-size: 0.8rem;
+    color: var(--light-grey);
+    display: inline-block;
+}
+
+.event-1.events__item {
+    border-left-color: var(--col-1);
+}
+
+.event-2.events__item {
+    border-left-color: var(--col-2);
+}
+
+.event-3.events__item {
+    border-left-color: var(--col-3);
+}
+
+.event-4.events__item {
+    border-left-color: var(--col-4);
+}
+
+.event-1 .events__tag {
+    background-color: var(--col-1);
+}
+
+.event-2 .events__tag {
+    background-color: var(--col-2);
+}
+
+.event-3 .events__tag {
+    background-color: var(--col-3);
+}
+
+.event-4 .events__tag {
+    background-color: var(--col-4);
+}
+
+/* edit curriculum */
+
+.fit-col {
+    width: 1px;
+    white-space: nowrap;
+}
+
+/* calendar */
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.calendar__week, .calendar__header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar__week {
+    text-align: right;
+    grid-auto-rows: 60px;
+}
+
+.calendar__header {
+    grid-auto-rows: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.calendar__day {
+    position: relative;
+    padding: 5px 10px;
+    border-right: 1px solid var(--light-grey);
+    border-top: 1px solid var(--light-grey);
+}
+
+.calendar__day .icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.calendar__day.today {
+    color: var(--primary);
+}
+
+.calendar__day:last-child {
+    border-right: 0;
+}
+
+.calendar {
+    /* background-color: white; */
+    border: 1px solid var(--light-grey);
+}
+
+.calendar__header {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    border: 2px solid var(--primary);
+}
+
+.btn-my {
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    padding: 16px 1rem;
+    border-radius: 8px;
+    text-transform: capitalize;
+    color: var(--light-grey);
+}
+
+.btn-option {
+    border-left: 0px;
+}
+
+.btn-option:first-child {
+    border-left: 1px solid var(--primary);
+}
+
+.btn-option.active {
+    background-color: var(--primary);
+    color: var(--danger);
+    font-weight: 500;
+    box-shadow: 1px 2px 30px -5px var(--red);
+}
+
+.btn-group-toggle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.custom-select {
+    padding: 16px 1.75rem 16px 1rem;
+    height: auto;
+    background-color: var(--bg);
+    color: var(--light-grey);
+    border-radius: 8px;
+    border-color: var(--primary);
+}
+
+/*Check box*/
+
+.check-calendar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.form-check {
+    float: left;
+}
+
+.form-check label {
+    position: relative;
+    cursor: pointer;
+    color: var(--light-grey);
+}
+
+/* remove actual checkbox */
+
+input[type="checkbox"] {
+    position: absolute;
+    right: 9000px;
+}
+
+/* animation when clicked */
+
+input[type="checkbox"]:checked+i {
+    color: var(--primary);
+    animation: effect 250ms ease-in;
+}
+
+@keyframes effect {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(1.3);
+    }
+    75% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+input[type="checkbox"]#checkbox-1:checked+i {
+    color: var(--col-1);
+}
+
+input[type="checkbox"]#checkbox-2:checked+i {
+    color: var(--col-2);
+}
+
+input[type="checkbox"]#checkbox-3:checked+i {
+    color: var(--col-3);
+}
+
+input[type="checkbox"]#checkbox-4:checked+i {
+    color: var(--col-4);
+}
+
+input[type="checkbox"]#checkbox-5:checked+i {
+    color: var(--col-5);
+}
+
+input[type="checkbox"]#checkbox-6:checked+i {
+    color: var(--col-6);
+}
+
+input[type="checkbox"]#checkbox-7:checked+i {
+    color: var(--col-7);
+}
+
+input[type="checkbox"]#checkbox-8:checked+i {
+    color: var(--col-8);
+}
+
+input[type="checkbox"]#checkbox-9:checked+i {
+    color: var(--col-9);
+}
+
+input[type="checkbox"]#checkbox-10:checked+i {
+    color: var(--col-10);
+}
+
+input[type="checkbox"]#checkbox-11:checked+i {
+    color: var(--col-11);
+}
+
+input[type="checkbox"]#checkbox-12:checked+i {
+    color: var(--col-12);
+}
+
+.circle-1 {
+    color: var(--col-1);
+}
+
+.circle-2 {
+    color: var(--col-2);
+}
+
+.circle-3 {
+    color: var(--col-3);
+}
+
+.circle-4 {
+    color: var(--col-4);
+}
+
+.circle-5 {
+    color: var(--col-5);
+}
+
+.circle-6 {
+    color: var(--col-6);
+}
+
+.circle-7 {
+    color: var(--col-7);
+}
+
+.circle-8 {
+    color: var(--col-8);
+}
+
+.circle-9 {
+    color: var(--col-9);
+}
+
+.circle-10 {
+    color: var(--col-10);
+}
+
+.circle-11 {
+    color: var(--col-11);
+}
+
+.circle-12 {
+    color: var(--col-12);
+}

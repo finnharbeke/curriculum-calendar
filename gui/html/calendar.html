@@ -1,0 +1,54 @@
+<h1>Calendar</h1>
+<div class="toolbar">
+    <div class="btn-group btn-group-toggle mr-3" data-toggle="buttons">
+        <label class="btn btn-option btn-my">
+            <input type="radio" id="option2"> week
+        </label>
+        <label class="btn btn-option btn-my active">
+            <input type="radio" id="option3"> month
+        </label>
+    </div>
+    <div class="btn btn-my mr-3" id="btn-today">
+        Today
+    </div>
+    <div class="input-group">
+        <select class="custom-select" id="month-select">
+            <option val="1">January</option>
+            <option val="2">February</option>
+            <option val="3">March</option>
+            <option val="4">April</option>
+            <option val="5">May</option>
+            <option val="6">June</option>
+            <option val="7">July</option>
+            <option val="8">August</option>
+            <option val="9">September</option>
+            <option val="10">October</option>
+            <option val="11">November</option>
+            <option val="12">December</option>
+        </select>
+        <select class="custom-select" id="year-select">
+            <script>
+                for (let i = 2019; i < 2050; i++) {
+                    let option = document.createElement('option');
+                    option.setAttribute("val", i);
+                    option.innerText = i;
+                    document.getElementById("year-select").appendChild(option)
+                }
+            </script>
+        </select>
+    </div>
+</div>
+
+<div class="calendar mb-3" id="calendar-month">
+    <div class="calendar__header">
+        <div>mon</div>
+        <div>tue</div>
+        <div>wed</div>
+        <div>thu</div>
+        <div>fri</div>
+        <div>sat</div>
+        <div>sun</div>
+    </div>
+</div>
+<div class="check-calendar" id="check-calendar">
+</div>

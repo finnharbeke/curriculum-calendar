@@ -1,25 +1,32 @@
 {
-  "name": "electron-quick-start",
+  "name": "curriculum-calendar",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "description": "Electron - Python App which allows you to plan a curriculum and put it into a calendar",
+  "main": "app.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^5.0.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoriMotonari/curriculum-calendar.git"
   },
+  "keywords": [
+    "python",
+    "electron",
+    "curriculum",
+    "calendar"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MoriMotonari/curriculum-calendar/issues"
+  },
+  "homepage": "https://github.com/MoriMotonari/curriculum-calendar#readme",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "electron": "^5.0.3",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
     "python-shell": "^1.0.7"
   }
 }

@@ -1,2 +1,4 @@
 node_modules
 gui/bootstrap-4
+.vscode
+src/__pycache__
